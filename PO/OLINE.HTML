@@ -3,7 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Online Admission Form</title>
+    <header>
+
+        <nav class="lol">
+          <div class="logo">
+              <a href="#">UGANDA MARYRTRS CENTINARY SSS   KANGULUMIRA</a>
+          </div>
+          <ul class="nav-links">
+            
+      
+      
+            <div class="search-container">
+              <input type="text" placeholder="Search.." id="search-input">
+              <button type="button" onclick="searchFunction()"><i class="fas fa-search"></i></button>
+          </div>
+      
+      
+      
+      </nav>
+      
+      
+        <nav>
+          <div class="logo">
+          
+          <img src="J.png" alt="">
+          <a href="#">MOTTO   "ENDURE UNTIL SUCCESS</a>
+      
+          
+          </div>
+      
+      
+            <nav class="navbar">
+              <a href="#" class="toggle-button" onclick="toggleNav()">
+                  <i class="fas fa-bars"></i>
+              </a>
+              <div class="navbar-links" id="navbar-links">
+                  <ul>
+                      <li><a href="index.html" onclick="navigateToSection('home')">HOME</a></li>
+                      <li><a href="#about" onclick="navigateToSection('about')">About</a></li>
+                      <li class="dropdown">
+                          <a href="#" class="dropbtn">ABOUT US</a>
+                          <div class="dropdown-content">
+                              <a href="admin.html" onclick="navigateToSection('admissions')">Administration</a>
+                              <a href="OLINE.HTML" onclick="navigateToSection('online')">Online</a>
+                          </div>
+                      </li>
+                      <li class="dropdown">
+                          <a href="#" class="dropbtn">ACADEMICS</a>
+                          <div class="dropdown-content">
+                              <a href="cademic.html">Academics</a>
+                              <a href="staff.html" onclick="navigateToSection('staff')">Staff</a>
+                              <a href="UNEB.HTML" onclick="navigateToSection('uneb')">UNEB</a>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      
+      </header>
+      
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -68,6 +128,37 @@
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+
+            <label for="Religion">Religion:</label>
+            <input type="Religion" id="Religion" name="Religion" required>
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tel">Tel::</label>
+            <input type="Tel" id="tel" name="Tel" required>
+
+
+            <label for="fschool">Former school:</label>
+            <input type="fschool" id="fschool" name="fschool" required>
+
+            <label for="maritual status">Maritual status:</label>
+            <select id="mstatus" name="mstatus" required>
+                <option value="mstatus">MARRIED</option>
+
+                    <option value="mstatus">SINGLE</option>
+                    <option value="mstatus">WIDOW</option>
+                    <option value="mstatus">SEPARATE</option>
+                    <option value="mstatus"></option>
+</select>
+
+
+
+
+
+
+
 
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required>

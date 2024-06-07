@@ -4,25 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Staff</title>
+    <link rel="stylesheet" href="style.css">
+    <header>
+
+        <nav class="lol">
+          <div class="logo">
+              <a href="#">UGANDA MARYRTRS CENTINARY SSS   KANGULUMIRA</a>
+          </div>
+          <ul class="nav-links">
+            
+      
+      
+            <div class="search-container">
+              <input type="text" placeholder="Search.." id="search-input">
+              <button type="button" onclick="searchFunction()"><i class="fas fa-search"></i></button>
+          </div>
+      
+      
+      
+      </nav>
+      
+      
+        <nav>
+          <div class="logo">
+          
+          <img src="pics/J.png" alt="">
+          <a href="#">MOTTO   "ENDURE UNTIL SUCCESS</a>
+      
+          
+          </div>
+      
+      <header></header>
+            <nav class="navbar">
+              <a href="#" class="toggle-button" onclick="toggleNav()">
+                  <i class="fas fa-bars"></i>
+              </a>S
+              <div class="navbar-links" id="navbar-links">
+                  <ul>
+                      <li><a href="index.html" onclick="navigateToSection('home')">HOME</a></li>
+                      <li><a href="#about" onclick="navigateToSection('about')">About</a></li>
+                      <li class="dropdown">
+                          <a href="#" class="dropbtn">ABOUT US</a>
+                          <div class="dropdown-content">
+                              <a href="admin.html" onclick="navigateToSection('admissions')">Administration</a>
+                              <a href="#online" onclick="navigateToSection('online')">Online</a>
+                          </div>
+                      </li>
+                      <li class="dropdown">
+                          <a href="#" class="dropbtn">ACADEMICS</a>
+                          <div class="dropdown-content">
+                              <a href="cademic.html">Academics</a>
+                              <a href="staff.html" onclick="navigateToSection('staff')">Staff</a>
+                              <a href="UNEB.HTML" onclick="navigateToSection('uneb')">UNEB</a>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      
+      </header>
+      
     <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
+    
         .container {
             max-width: 1200px;
             width: 100%;
@@ -153,13 +196,17 @@
     </style>
 </head>
 <body>
+
+<H1> BOARD OF OF GOVERNORS</H1>
+
+
     <div class="container">
         <h1>School Staff</h1>
 
         <div class="grid">
             <!-- Staff member cards -->
             <div class="card" onclick="openModal(0)">
-                <img class="image" src="head teacher.jpg" alt="Staff 1 Photo">
+                <img class="image" src="pics/head teacher.jpg" alt="Staff 1 Photo">
                 <div class="card-content">
                     <h2>KALULE FRED</h2>
                     <p>HEAD TEACHER</p>
@@ -167,7 +214,7 @@
             </div>
 
             <div class="card" onclick="openModal(1)">
-                <img class="image" src="DEPUTY  HEADTEACHER.jpg" alt="Staff 2 Photo">
+                <img class="image" src="pics/DEPUTY  HEADTEACHER.jpg" alt="Staff 2 Photo">
                 <div class="card-content">
                     <h2>NASSOLO RUTH</h2>
                     <p>DEPUTY HEAD TEACHER</p>
@@ -175,7 +222,7 @@
             </div>
 
             <div class="card" onclick="openModal(3)">
-                <img class="image" src="TUMUKUNDE FILLY.jpg" alt="Staff 4 Photo">
+                <img class="image" src="pics/TUMUKUNDE FILLY.jpg" alt="Staff 4 Photo">
                 <div class="card-content">
                     <h2>TUMUKUDE FILLY</h2>
                     <p>D.O.S</p>
@@ -186,7 +233,7 @@
 
 
             <div class="card" onclick="openModal(2)">
-                <img class="image" src="GEOFREY.jpg" alt="Staff 3 Photo">
+                <img class="image" src="pics/GEOFREY.jpg" alt="Staff 3 Photo">
                 <div class="card-content">
                     <h2>MR GEOFREY</h2>
                     <p>BIOLOGY & CHEMISTRY</p>
@@ -196,7 +243,7 @@
             
 
             <div class="card" onclick="openModal(4)">
-                <img class="image" src="MWASE.jpg" alt="Staff 5 Photo">
+                <img class="image" src="pics/MWASE.jpg" alt="Staff 5 Photo">
                 <div class="card-content">
                     <h2>MMR MWASE JOSHUA</h2>
                     <p>BIOLOGY&CHEM</p>
@@ -204,7 +251,7 @@
             </div>
 
             <div class="card" onclick="openModal(5)">
-                <img class="image" src="FAISAL.jpg" alt="Staff 6 Photo">
+                <img class="image" src="pics/FAISAL.jpg" alt="Staff 6 Photo">
                 <div class="card-content">
                     <h2>MUTEBI FAISAL</h2>
                     <p>HISTROY AND LUGANDA</p>
@@ -212,7 +259,7 @@
             </div>
 
             <div class="card" onclick="openModal(6)">
-                <img class="image" src="BRUNO.jpg" alt="Staff 7 Photo">
+                <img class="image" src="pics/BRUNO.jpg" alt="Staff 7 Photo">
                 <div class="card-content">
                     <h2>ZAVUGA BRUNO</h2>
                     <p>English Teacher</p>

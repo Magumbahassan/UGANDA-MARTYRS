@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Gallery Layout</title>
     <style>
         /* General Reset */
@@ -12,17 +13,7 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
+    
         .container {
             max-width: 1200px;
             width: 100%;
@@ -110,46 +101,179 @@
         }
     </style>
 </head>
+
+
+
+
+<header>
+
+    <nav class="lol">
+      <div class="logo">
+          <a href="#">UGANDA MARYRTRS CENTINARY SSS   KANGULUMIRA</a>
+      </div>
+      <ul class="nav-links">
+        
+  
+  
+        <div class="search-container">
+          <input type="text" placeholder="Search.." id="search-input">
+          <button type="button" onclick="searchFunction()"><i class="fas fa-search"></i></button>
+      </div>
+  
+  
+  
+  </nav>
+  
+  
+    <nav>
+      <div class="logo">
+      
+      <img src="J.png" alt="">
+      <a href="#">MOTTO   "ENDURE UNTIL SUCCESS</a>
+  
+      
+      </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        <nav class="navbar">
+          <a href="#" class="toggle-button" onclick="toggleNav()">
+              <i class="fas fa-bars"></i>
+          </a>
+          <div class="navbar-links" id="navbar-links">
+              <ul>
+                  <li><a href="index.html"onclick="changeColor(this)">HOME</a></li>
+                  <li><a href="gall.html"onclick="changeColor(this)">GALLARY</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropbtn">ABOUT US</a>
+                      <div class="dropdown-content">
+                          <a href="admin.html"onclick="changeColor(this)">Administration</a>
+                          <a href="#" onclick="changeColor(this)">School anthem</a>
+                          <a href="#" onclick="changeColor(this)">founders </a>
+  
+  
+                      </div>
+                  </li>
+  
+  
+                  <li class="dropdown">
+                      <a href="#" class="dropbtn">ADMISSIONS</a>
+                      <div class="dropdown-content">
+                          <a href="admin.html" onclick="changeColor(this)">Admission</a>
+                          <a href="OLINE.HTML" onclick="changeColor(this)">Apply online</a>
+                          
+  
+  
+                      </div>
+                  </li>
+  
+  
+  
+  
+  
+  
+                  <li class="dropdown">
+                      <a href="#" class="dropbtn">ACADEMICS</a>
+                      <div class="dropdown-content">
+                          <a href="#academic.html">Academics</a>
+                          <a href="staff.html"onclick="changeColor(this)">Staff</a>
+                          <a href="UNEB.HTML"onclick="changeColor(this)">UNEB</a>
+                          <a href="depart.htm"onclick="changeColor(this)">departments</a>
+                          <a href="#uneb"onclick="changeColor(this)">currriculum</a>
+                          
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div class="navbar-toggle" onclick="toggleNav()">
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+      </nav>
+  
+  </header>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 <body>
     <div class="container">
         <h1>Gallery Layout</h1>
 
         <div class="gallery">
             <div class="image-container">
-                <img src="WhatsApp Image 2024-05-25 at 10.53.58_91ce509f.jpg" alt="Image 1" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+1')">
+                <img src="pics/WhatsApp Image 2024-05-25 at 10.53.58_91ce509f.jpg" alt="Image 1" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+1')">
             </div>
             <div class="image-container">
-                <img src="WhatsApp Image 2024-05-25 at 11.01.24_6443d0b8.jpg" alt="Image 2" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+2')">
+                <img src="pics/WhatsApp Image 2024-05-25 at 11.01.24_6443d0b8.jpg" alt="Image 2" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+2')">
             </div>
             <div class="image-container">
-                <img src="WhatsApp Image 2024-05-25 at 11.35.48_91a13732.jpg" alt="Image 3" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+3')">
+                <img src=" pics/WhatsApp Image 2024-05-25 at 11.35.48_91a13732.jpg" alt="Image 3" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+3')">
             </div>
             <div class="image-container">
-                <img src="WhatsApp Image 2024-05-25 at 11.39.49_6baa453b.jpg" alt="Image 4" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+4')">
+                <img src="pics/WhatsApp Image 2024-05-25 at 11.39.49_6baa453b.jpg" alt="Image 4" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+4')">
             </div>
             <div class="image-container">
-                <img src="WhatsApp Image 2024-05-25 at 11.39.50_63147c14.jpg" alt="Image 5" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+5')">
+                <img src="pics/WhatsApp Image 2024-05-25 at 11.39.50_63147c14.jpg" alt="Image 5" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+5')">
             </div>
             <div class="image-container">
-                <img src="WhatsApp Image 2024-05-25 at 11.39.50_fc5ecfd9.jpg" alt="Image 6" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+6')">
+                <img src="pics/WhatsApp Image 2024-05-25 at 11.39.50_fc5ecfd9.jpg" alt="Image 6" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+6')">
             </div>
             <div class="image-container">
-                <img src="WhatsApp Image 2024-05-25 at 11.40.07_8db9cd0e.jpg" alt="Image 7" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+7')">
+                <img src="pics/WhatsApp Image 2024-05-25 at 11.40.07_8db9cd0e.jpg" alt="Image 7" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+7')">
             </div>
             <div class="image-container">
-                <img src="WhatsApp Image 2024-05-25 at 11.41.39_b8cf8ca5.jpg" alt="Image 8" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+8')">
+                <img src="pics/WhatsApp Image 2024-05-25 at 11.41.39_b8cf8ca5.jpg" alt="Image 8" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+8')">
             </div>
             <div class="image-container">
-                <img src="WhatsApp Image 2024-05-25 at 11.45.31_8f7e8518.jpg" alt="Image 9" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+9')">
+                <img src="pics/WhatsApp Image 2024-05-25 at 11.45.31_8f7e8518.jpg" alt="Image 9" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+9')">
             </div>
             <div class="image-container">
-                <img src="WhatsApp Image 2024-05-25 at 11.45.31_a042872d.jpg" alt="Image 10" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+10')">
+                <img src="pics/WhatsApp Image 2024-05-25 at 11.45.31_a042872d.jpg" alt="Image 10" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+10')">
             </div>
             <div class="image-container">
-                <img src="WhatsApp Image 2024-05-25 at 11.46.55_af360338.jpg" alt="Image 11" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+11')">
+                <img src="pics/WhatsApp Image 2024-05-25 at 11.46.55_af360338.jpg" alt="Image 11" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+11')">
             </div>
             <div class="image-container">
-                <img src="WhatsApp Video 2024-05-25 at 11.39.49_c95d5117.mp4" alt="Image 12" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+12')">
+                <img src="pics/WhatsApp Video 2024-05-25 at 11.39.49_c95d5117.mp4" alt="Image 12" onclick="openLightbox('https://via.placeholder.com/500x500?text=Image+12')">
             </div>
             <!-- Add more images as needed -->
         </div>

@@ -10,6 +10,41 @@ function toggleNav() {
 
 
 
+
+
+
+function toggleNav() {
+    var navbarLinks = document.getElementById("navbar-links");
+    navbarLinks.classList.toggle("active");
+}
+
+function changeColor(element) {
+    // Remove active class from all links
+    var links = document.querySelectorAll('.navbar-links a');
+    links.forEach(function(link) {
+        link.classList.remove('active');
+    });
+
+    // Add active class to the clicked link
+    element.classList.add('active');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function searchFunction() {
     var searchInput = document.getElementById("search-input").value;
     alert("You searched for: " + searchInput);
